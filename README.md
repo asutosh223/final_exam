@@ -29,7 +29,7 @@ From the original data examples with missing values were removed (the majority h
 
 
 ## Proposed Solution
-
+Given is the attribute name, attribute type, the measurement unit and a brief description. The number of rings is the value to predict: either as a continuous value or as a classification problem. 
 
 
 ## Benchmark Model
