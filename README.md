@@ -39,7 +39,7 @@ As we know rings are used to claculate age & to achieve this goal we will attemp
 The number of rings is the value to predict: either as a continuous value or as a classification problem. 
 
 Apply different regression techniques:
-We are interested in performing various regression techniques such as additive models, interactions, polynomial transformations of the variables etc to be able to predict and assess the accuracy of our prediction.
+We are interested in performing various regression techniques such as Linear Regression, additive models, interactions, polynomial transformations of the variables etc to be able to predict and assess the accuracy of our prediction.
 
 ## Benchmark Model
 Given that we seek a regression model a good naive benchmark would be to use either the mean or the median of the volume of the abalone assuming it's a cylinder shape, πr^2h or a simple regressin model
@@ -47,4 +47,3 @@ Given that we seek a regression model a good naive benchmark would be to use eit
 ## Performance Metric
 Given that this is a regression task, we can measure the success of our model using the R^2 metric, the Mean Absolute Error, or the Mean Square Error.
 
-## Conclusion
