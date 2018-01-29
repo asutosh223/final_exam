@@ -13,7 +13,7 @@ The age of abalone is determined by cutting the shell through the cone, staining
 - Number of Attributes: 8
 - Missing Attribute Values: None
 
-
+![size](https://user-images.githubusercontent.com/33742913/35494570-5af42712-0470-11e8-95f0-6d57b293701d.PNG)
 
 |Name		        | Data Type	     |Meas.	  |Description                |
 |---------------|:--------------:|:------:|--------------------------:| 
@@ -27,24 +27,24 @@ The age of abalone is determined by cutting the shell through the cone, staining
 |	Shell weight	| continuous	   | grams	|after being dried          | 
 |	Rings	        | integer			   |        |+1.5 gives the age in years|
 
-From the original data examples with missing values were removed (the majority having the predicted value missing), and the ranges of the continuous values have been scaled for use with an ANN (by dividing by 200).
+From the original data examples with missing values were removed (the majority having the predicted value missing), and the ranges of the continuous values have been scaled for use with an ANN (by dividing by 200). *As per UCI website** 
 
 
 ## Proposed Solution
-Given is the attribute name, attribute type, the measurement unit and a brief description. 
-The abalone dataset from UCI Machine Learning Arvhives comes with the goal of attempting to predict abalone age (through the number of rings on the shell) given various descriptive attributes of the abalone (Shell sizes, weights of whole abalone and parts of shucked abalone). 
-In following this goal, we will attempt to predict rings using the the shell sizes (height, length, width), and weights (shell weight, shucked weight, viscera weight, whole weight). The problem associated with this dataset is that these descriptive attributes are all heavily correlated.
+
+We are provided with attribute name, attribute type, the measurement unit and a brief description. 
+Our aim for abalone dataset is to predict abalone age (through the number of rings on the shell) given various descriptive attributes of the abalone (length, diameter, weights of whole abalone and parts of shucked abalone). 
+As we know rings are used to claculate age & to achieve this goal we will attempt to predict rings using the the shell sizes (height, length, width, and weights etc. The problem associated with this dataset is that these descriptive attributes are all heavily correlated.
 
 The number of rings is the value to predict: either as a continuous value or as a classification problem. 
 
 Apply different regression techniques:
-
 We are interested in performing various regression techniques such as additive models, interactions, polynomial transformations of the variables etc to be able to predict and assess the accuracy of our prediction.
 
 ## Benchmark Model
-
+Given that we seek a regression model a good naive benchmark would be to use either the mean or the median of the volume of the abalone assuming it's a cylinder shape, πr^2h
 
 ## Performance Metric
-
+Given that this is a regression task, we can measure the success of our model using the R^2 metric, the Mean Absolute Error, or the Mean Square Error.
 
 ## Conclusion
