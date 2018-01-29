@@ -1,15 +1,19 @@
 # Abalone 
 ## Domain
-Abalone is a shellfish considered a delicacy in many parts of the world. The abalone shell and the meat is of value.  The goal of this project is to perform exploratory data analysis for the HAbalone dataset which is a modification of the Abalone Dataset (http://archive.ics.uci.edu/ml/datasets/Abalone). The original Abalone dataset is a 9D dataset and HAbolone is a 10D dataset with an ordinal Age attribute added; HAbalone has the the following attributes:
+Abalone is a shellfish considered a delicacy in many parts of the world. An excellent source of iron and pantothenic acid, and a nutritious food resource and farming in Australia, America and East Asia. 100 grams of abalone yields more than 20% recommended daily intake of these nutrients. The economic value of abalone is positively correlated with its age. Therefore, to detect the age of abalone accurately is important for both farmers and customers to determine its price. However, the current technology to decide the age is quite costly and inefficient. Farmers usually cut the shells and count the rings through microscopes to estimate the abalones age. Telling the age of abalone is therefore difficult mainly because their size depends not only on their age, but on the availability of food as well. Moreover, abalone sometimes form the so-called 'stunted' populations which have their growth characteristics very different from other abalone populations This complex method increases the cost and limits its popularity. Our goal in this report is to find out the best indicators to forecast the rings, then the age of abalones (http://archive.ics.uci.edu/ml/datasets/Abalone)
 
 ## Problem Statement
-Predict the age of abalone from physical measurements
+Predict the age of abalone from physical measurements.
+
+The age of abalone is determined by cutting the shell through the cone, staining it, and counting the number of rings through a microscope -- a boring and time-consuming task.  Other measurements, which are easier to obtain, are used to predict the age. Further information, such as weather patterns and location (hence food availability) may be required to solve the problem.
 
 ## Dataset
 
 - Number of Instances: 4177
 - Number of Attributes: 8
 - Missing Attribute Values: None
+
+
 
 |Name		        | Data Type	     |Meas.	  |Description                |
 |---------------|:--------------:|:------:|--------------------------:| 
@@ -23,14 +27,19 @@ Predict the age of abalone from physical measurements
 |	Shell weight	| continuous	   | grams	|after being dried          | 
 |	Rings	        | integer			   |        |+1.5 gives the age in years|
 
-Predicting the age of abalone from physical measurements. The age of abalone is determined by cutting the shell through the cone, staining it, and counting the number of rings through a microscope -- a boring and time-consuming task. Other measurements, which are easier to obtain, are used to predict the age. Further information, such as weather patterns and location (hence food availability) may be required to solve the problem. 
-
 From the original data examples with missing values were removed (the majority having the predicted value missing), and the ranges of the continuous values have been scaled for use with an ANN (by dividing by 200).
 
 
 ## Proposed Solution
-Given is the attribute name, attribute type, the measurement unit and a brief description. The number of rings is the value to predict: either as a continuous value or as a classification problem. 
+Given is the attribute name, attribute type, the measurement unit and a brief description. 
+The abalone dataset from UCI Machine Learning Arvhives comes with the goal of attempting to predict abalone age (through the number of rings on the shell) given various descriptive attributes of the abalone (Shell sizes, weights of whole abalone and parts of shucked abalone). 
+In following this goal, we will attempt to predict rings using the the shell sizes (height, length, width), and weights (shell weight, shucked weight, viscera weight, whole weight). The problem associated with this dataset is that these descriptive attributes are all heavily correlated.
 
+The number of rings is the value to predict: either as a continuous value or as a classification problem. 
+
+Apply different regression techniques:
+
+We are interested in performing various regression techniques such as additive models, interactions, polynomial transformations of the variables etc to be able to predict and assess the accuracy of our prediction.
 
 ## Benchmark Model
 
