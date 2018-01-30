@@ -42,8 +42,8 @@ Apply different regression techniques:
 We are interested in performing various regression techniques such as Linear Regression, additive models, interactions, polynomial transformations of the variables etc to be able to predict and assess the accuracy of our prediction.
 
 ## Benchmark Model
-Given that we seek a regression model a good naive benchmark would be to use either the mean or the median of the volume of the abalone assuming it's a cylinder shape, πr^2h or a simple regressin model
+Given that we seek a regression model a good naive benchmark would be to use either the mean or the median of the volume of the abalone assuming it's a cylinder shape, πr^2h or a simple regression model
 
 ## Performance Metric
-Given that this is a regression task, we can measure the success of our model using the R^2 metric, the Mean Absolute Error, or the Mean Square Error.
+Given that this is a regression task, we can measure the success of our model using R-Squared Model, Adjusted R-Square Model, the Mean Absolute Error, or the Mean Square Error.
 
